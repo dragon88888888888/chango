@@ -1,0 +1,298 @@
+body{
+    font-family: 'Nunito sans' !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/*#########################################################
+encabezado
+##########################################################
+*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 20px;
+    height: 100px; /* Puedes fijar una altura si es necesario */
+    position: relative;
+    overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño de la imagen según lo necesario */
+    height: auto;
+    background-color: #ffc843;
+    position: absolute;
+    top: 0%; /* Ajusta cuánto sobresale la imagen del contenedor */
+    left: -32%; /* Ajusta la posición horizontal si lo necesitas */
+    z-index: 1; /* Asegura que esté detrás del texto y botón */
+    padding: 10%;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    margin-top: 20%;
+    margin-left: 80%; /* Aumenta para darle más espacio respecto a la imagen */
+    transform: rotate(-10deg);
+    z-index: 2;
+    position: relative;
+}
+
+.apply-button {
+    background-color: #ffc843;
+    color: #000;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2;
+    position: relative; /* Si no deseas que se salga del flujo */
+}
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #000;
+        padding: 20px;
+        height: 100px; /* Puedes fijar una altura si es necesario */
+        position: relative;
+        overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
+    }
+    
+    .logo {
+        position: relative;
+    }
+    
+    .logo img {
+        width: 150px; /* Ajusta el tamaño de la imagen según lo necesario */
+        height: auto;
+        background-color: #ffc843;
+        position: absolute;
+        top: -10%; /* Ajusta cuánto sobresale la imagen del contenedor */
+        left: -45%; /* Ajusta la posición horizontal si lo necesitas */
+        z-index: 1; /* Asegura que esté detrás del texto y botón */
+        padding: 5%;
+    }
+    
+    .logo-text {
+        color: #fff;
+        font-size: 2.1rem; /* Ajusta el tamaño del texto */
+        font-family: "Bebas Neue", sans-serif;
+        font-style: italic;
+        margin-top: 30%;
+        margin-left: 80%; /* Aumenta para darle más espacio respecto a la imagen */
+        transform: rotate(-10deg);
+        z-index: 2;
+        position: relative;
+    }
+    
+    .apply-button {
+        background-color: #ffc843;
+        color: #000;
+        padding: 20px 40px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 2;
+        position: relative; /* Si no deseas que se salga del flujo */
+    }
+}
+
+/********************************************************************
+Seccion para abajo y footer
+********************************************************************/
+.seccion {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+.box1 {
+    background-color: #000000;
+    color: white;
+    margin-right: 16px;
+    padding-left: 8%;
+    padding-right: 3%;
+}
+
+.box2 {
+    background-color: #371c3b;
+    color: white;
+    padding-right: 8%;
+    padding-left: 3%;
+    
+}
+.logo-image {
+    width: 30%; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción original */
+    margin-bottom: 5%;
+    
+}
+
+.seccion .logo-texts {
+    font-family: "Jomhuria", serif; /* Cambia esto si tienes una fuente específica */
+    font-size: 9rem; /* Ajusta el tamaño del texto */
+    margin-top: -8%;
+    background: linear-gradient(90deg, #3a82f7, #a12ee2, #f15d5d, #f1903d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   margin-bottom: -8%;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem !important;
+}
+
+.button {
+    margin-top: 8%;
+    background-color: #565ff0;
+    color: rgb(0, 0, 0);
+    padding: 20px 170px;
+    text-decoration: none;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+   
+}
+
+.button2 {
+    color: white;
+    background-color: #d827f3;
+}
+
+@media (max-width: 768px) {
+    .seccion {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        height: 50vh;
+    }
+    .button {
+        margin-top: 8%;
+        background-color: #565ff0;
+        color: rgb(0, 0, 0);
+        padding: 20px 120px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 0%;
+    }
+    
+    .button2 {
+        color: white;
+        background-color: #d827f3;
+        font-weight: bold;
+        margin-top: 0%;
+    }
+}
+
+/* footer*/
+.full-height {
+    height: 90vh; /* 100% de la altura de la ventana del navegador */
+  }
+
+footer{
+    background-color: #000000 !important;
+    
+
+}
+footer .grid{
+    grid-template-columns: 2fr 1fr;
+}
+footer .text{
+    font-size: 2rem !important;
+    width: 100% !important;
+    text-align: start;
+    font-weight: bold;
+}
+footer .mono{
+    width: 40rem !important;
+}
+footer .text1{
+    font-size: 6rem !important;
+    width: 100% !important;
+}
+@media (max-width: 1024px) {
+    footer .grid {
+      grid-template-columns: 1fr; /* Cambia a una columna en pantallas medianas */
+      gap: 10px;
+      padding: 10px; /* Reduce el padding */
+    }
+  
+    footer .text {
+      font-size: 1.5rem !important; /* Reduce el tamaño de fuente */
+    }
+  
+    footer .text1 {
+      font-size: 4rem !important; /* Reduce el tamaño de la fuente para el título */
+    }
+  
+    footer .mono {
+      width: 30rem !important; /* Ajusta el tamaño de la imagen */
+      margin: 0 auto; /* Centra la imagen */
+    }
+  
+    .flex1 {
+      text-align: center; /* Centra el texto */
+      padding-left: 0; /* Elimina el padding en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    footer .grid {
+      grid-template-columns: 1fr; /* Cambia a una columna para pantallas pequeñas */
+      gap: 0;
+      padding: 5px; /* Reduce aún más el padding */
+    }
+  
+    footer .text {
+      font-size: 1.2rem !important; /* Tamaño de fuente más pequeño */
+    }
+  
+    footer .text1 {
+      font-size: 3rem !important; /* Reduce el tamaño de la fuente */
+      text-align: start;
+    }
+  
+    footer .mono {
+      width: 100% !important; /* Imagen más pequeña y que ocupe el ancho disponible */
+    }
+  
+    .flex1 {
+      text-align: center; /* Centra todo el contenido */
+      padding-left: 0; /* Elimina padding */
+    }
+  
+    .flex.grid-cols-3 {
+      gap: 10px; /* Reduce el espacio entre los iconos de redes sociales */
+    }
+  
+    footer img {
+      width: 2rem !important; /* Ajusta el tamaño de los íconos de redes sociales */
+    }
+  }
+  
