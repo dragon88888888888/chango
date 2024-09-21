@@ -61,9 +61,9 @@ header {
         align-items: center;
         justify-content: space-between;
         background-color: #000;
-        padding: 20px;
-        height: 100px; /* Puedes fijar una altura si es necesario */
-        position: relative;
+        padding: 3% !important;
+        height: 4rem ; /* Puedes fijar una altura si es necesario */
+        position: sticky !important;
         overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
     }
     
@@ -72,19 +72,19 @@ header {
     }
     
     .logo img {
-        width: 150px; /* Ajusta el tamaño de la imagen según lo necesario */
+        width: 150% !important; /* Ajusta el tamaño de la imagen según lo necesario */
         height: auto;
         background-color: #ffc843;
         position: absolute;
         top: -10%; /* Ajusta cuánto sobresale la imagen del contenedor */
-        left: -45%; /* Ajusta la posición horizontal si lo necesitas */
+        left: -25%; /* Ajusta la posición horizontal si lo necesitas */
         z-index: 1; /* Asegura que esté detrás del texto y botón */
         padding: 5%;
     }
     
     .logo-text {
         color: #fff;
-        font-size: 2.1rem; /* Ajusta el tamaño del texto */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
         font-family: "Bebas Neue", sans-serif;
         font-style: italic;
         margin-top: 30%;
@@ -97,8 +97,8 @@ header {
     .apply-button {
         background-color: #ffc843;
         color: #000;
-        padding: 20px 40px;
-        font-size: 1rem;
+        padding: 10px 20px;
+        font-size: 0.8rem;
         font-weight: bold;
         text-decoration: none;
         z-index: 2;
@@ -186,21 +186,55 @@ Seccion para abajo y footer
 
 @media (max-width: 768px) {
     .seccion {
+        display: flex;
+        width: 100%;
+        height: auto ;
         flex-direction: column;
     }
 
     .box {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         width: 100%;
         height: 50vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
+    .seccion .logo-texts {
+        font-family: "Jomhuria", serif; /* Cambia esto si tienes una fuente específica */
+        font-size: 7rem; /* Ajusta el tamaño del texto */
+        margin-top: -8%;
+        background: linear-gradient(90deg, #3a82f7, #a12ee2, #f15d5d, #f1903d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+       margin-bottom: -8%;
+        letter-spacing: 2px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        display: inline-block;
+    }
+    .logo-image {
+        width: 50%; /* Ajusta el tamaño según sea necesario */
+        height: auto; /* Mantiene la proporción original */
+        margin-bottom: 5%;
+        
+    }
+    
+    .text {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1rem !important;
+    }
+
     .button {
         margin-top: 8%;
         background-color: #565ff0;
         color: rgb(0, 0, 0);
-        padding: 20px 120px;
+        padding: 10px 80px;
         font-weight: bold;
         text-decoration: none;
         margin-top: 0%;
+        font-size: 1rem !important;
     }
     
     .button2 {
@@ -240,6 +274,13 @@ footer .text1{
 
   
   @media (max-width: 768px) {
+    footer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .full-height {
+        height: auto; /* 100% de la altura de la ventana del navegador */
+      }
     footer .grid {
       grid-template-columns: 1fr; /* Cambia a una columna para pantallas pequeñas */
       gap: 0;
