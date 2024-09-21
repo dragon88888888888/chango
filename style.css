@@ -120,6 +120,7 @@ Seccion para abajo y footer
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
    
     
 }
@@ -236,31 +237,7 @@ footer .text1{
     font-size: 6rem !important;
     width: 100% !important;
 }
-@media (max-width: 1024px) {
-    footer .grid {
-      grid-template-columns: 1fr; /* Cambia a una columna en pantallas medianas */
-      gap: 10px;
-      padding: 10px; /* Reduce el padding */
-    }
-  
-    footer .text {
-      font-size: 1.5rem !important; /* Reduce el tamaño de fuente */
-    }
-  
-    footer .text1 {
-      font-size: 4rem !important; /* Reduce el tamaño de la fuente para el título */
-    }
-  
-    footer .mono {
-      width: 30rem !important; /* Ajusta el tamaño de la imagen */
-      margin: 0 auto; /* Centra la imagen */
-    }
-  
-    .flex1 {
-      text-align: center; /* Centra el texto */
-      padding-left: 0; /* Elimina el padding en pantallas medianas */
-    }
-  }
+
   
   @media (max-width: 768px) {
     footer .grid {
