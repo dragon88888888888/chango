@@ -339,7 +339,7 @@ footer .text1{
     }
 
     .flex.grid-cols-3 {
-        gap: 10px; /* Reduce el espacio entre los iconos de redes sociales */
+        gap: 5rem; /* Reduce el espacio entre los iconos de redes sociales */
     }
 
     footer img {
