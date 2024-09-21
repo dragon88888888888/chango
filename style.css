@@ -55,54 +55,50 @@ header {
     z-index: 2;
     position: relative; /* Si no deseas que se salga del flujo */
 }
+/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #000;
-        padding: 3% !important;
-        height: 4rem ; /* Puedes fijar una altura si es necesario */
-        position: sticky !important;
-        overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
+        padding: 10px; /* Ajusta el padding para evitar demasiado espacio en móviles */
+        height: auto; /* Ajusta automáticamente según el contenido */
+        position: relative;
+        overflow: visible;
     }
-    
+
     .logo {
         position: relative;
+        display: flex;
+        align-items: center;
     }
-    
+
     .logo img {
-        width: 150% !important; /* Ajusta el tamaño de la imagen según lo necesario */
+        width: 160px !important; /* Aumenta ligeramente el tamaño en pantallas pequeñas */
         height: auto;
         background-color: #ffc843;
         position: absolute;
-        top: -10%; /* Ajusta cuánto sobresale la imagen del contenedor */
-        left: -25%; /* Ajusta la posición horizontal si lo necesitas */
-        z-index: 1; /* Asegura que esté detrás del texto y botón */
-        padding: 5%;
+        top: -35%; 
+        left: -15%; /* Ajusta la posición para pantallas pequeñas */
+        z-index: 1;
+        padding: 10px;
     }
-    
+
     .logo-text {
-        color: #fff;
-        font-size: 1rem; /* Ajusta el tamaño del texto */
-        font-family: "Bebas Neue", sans-serif;
-        font-style: italic;
-        margin-top: 30%;
-        margin-left: 80%; /* Aumenta para darle más espacio respecto a la imagen */
-        transform: rotate(-10deg);
+        font-size: 1.5rem; /* Mantén el tamaño ajustado del texto */
+        margin-left: 100%; /* Ajusta para no cortar la imagen */
+        transform: rotate(-10deg); /* Mantén la rotación */
         z-index: 2;
         position: relative;
+        margin-top: 3%;
     }
-    
+
     .apply-button {
         background-color: #ffc843;
         color: #000;
         padding: 10px 20px;
-        font-size: 0.8rem;
+        font-size: 1rem; /* Reduce ligeramente el tamaño de la fuente */
         font-weight: bold;
         text-decoration: none;
         z-index: 2;
-        position: relative; /* Si no deseas que se salga del flujo */
+        position: relative;
     }
 }
 
@@ -273,44 +269,53 @@ footer .text1{
 }
 
   
-  @media (max-width: 768px) {
-    footer{
+@media (max-width: 768px) {
+    footer {
         padding-left: 2rem;
         padding-right: 2rem;
     }
     .full-height {
-        height: auto; /* 100% de la altura de la ventana del navegador */
-      }
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+    
     footer .grid {
-      grid-template-columns: 1fr; /* Cambia a una columna para pantallas pequeñas */
-      gap: 0;
-      padding: 5px; /* Reduce aún más el padding */
+        grid-template-columns: 1fr; /* Cambia a una columna para pantallas pequeñas */
+        gap: 0;
+        padding: 5px; /* Reduce aún más el padding */
     }
-  
+
+    /* Cambia el orden del contenedor de la imagen */
+    footer .ml-auto {
+        order: -1; /* Cambia el orden para que aparezca primero */
+        margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+        text-align: center; /* Centra la imagen en la columna */
+    }
+
     footer .text {
-      font-size: 1.2rem !important; /* Tamaño de fuente más pequeño */
+        font-size: 1.2rem !important; /* Tamaño de fuente más pequeño */
     }
-  
+
     footer .text1 {
-      font-size: 3rem !important; /* Reduce el tamaño de la fuente */
-      text-align: start;
+        font-size: 3rem !important; /* Reduce el tamaño de la fuente */
+        text-align: start;
     }
-  
+
     footer .mono {
-      width: 100% !important; /* Imagen más pequeña y que ocupe el ancho disponible */
+        width: 100% !important; /* Imagen más pequeña y que ocupe el ancho disponible */
     }
-  
+
     .flex1 {
-      text-align: center; /* Centra todo el contenido */
-      padding-left: 0; /* Elimina padding */
+        text-align: center; /* Centra todo el contenido */
+        padding-left: 0; /* Elimina padding */
     }
-  
+
     .flex.grid-cols-3 {
-      gap: 10px; /* Reduce el espacio entre los iconos de redes sociales */
+        gap: 10px; /* Reduce el espacio entre los iconos de redes sociales */
     }
-  
+
     footer img {
-      width: 2rem !important; /* Ajusta el tamaño de los íconos de redes sociales */
+        width: 2rem !important; /* Ajusta el tamaño de los íconos de redes sociales */
     }
-  }
+}
+
   
