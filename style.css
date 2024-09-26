@@ -49,7 +49,7 @@ header {
     background-color: #ffc843;
     color: #000;
     padding: 20px 40px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     z-index: 2;
@@ -283,6 +283,12 @@ footer{
 footer .grid{
     grid-template-columns: 2fr 1fr;
 }
+footer .text2{
+    font-size: 2rem !important;
+    width: 100% !important;
+    text-align: start;
+    font-weight: 900;
+}
 footer .text{
     font-size: 2rem !important;
     width: 100% !important;
@@ -293,8 +299,14 @@ footer .mono{
     width: 40rem !important;
 }
 footer .text1{
-    font-size: 6rem !important;
+    font-size: 7.5rem !important;
     width: 100% !important;
+    font-family: 'Oswald';
+}
+
+footer .that{
+    font-weight: 900;
+    color: #ffc843;
 }
 
   
@@ -320,13 +332,19 @@ footer .text1{
         text-align: center; /* Centra la imagen en la columna */
     }
 
-    footer .text {
+    footer .text2 {
         font-size: 1.2rem !important; /* Tamaño de fuente más pequeño */
     }
 
     footer .text1 {
         font-size: 3rem !important; /* Reduce el tamaño de la fuente */
         text-align: start;
+    }
+    footer .text{
+        font-size: 1.2rem !important;
+        width: 100% !important;
+        text-align: start;
+        font-weight: bold;
     }
 
     footer .mono {
