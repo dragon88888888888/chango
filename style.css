@@ -1,5 +1,5 @@
 body{
-    font-family: 'Nunito sans' !important;
+    font-family: 'Montserrat' !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -12,96 +12,79 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #000;
-    padding: 20px;
     height: 100px; /* Puedes fijar una altura si es necesario */
     position: relative;
     overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
 }
 
 .logo {
-    position: relative;
+    display: flex;
+    
 }
 
 .logo img {
-    width: 150px; /* Ajusta el tamaño de la imagen según lo necesario */
+    width: 10rem; /* Ajusta el tamaño de la imagen según lo necesario */
     height: auto;
-    background-color: #ffc843;
-    position: absolute;
+    
     top: 0%; /* Ajusta cuánto sobresale la imagen del contenedor */
-    left: -15%; /* Ajusta la posición horizontal si lo necesitas */
-    z-index: 1; /* Asegura que esté detrás del texto y botón */
-    padding: 10%;
+    left: 0%; /* Ajusta la posición horizontal si lo necesitas */
+    padding: 5%;
 }
 
-.logo-text {
-    color: #fff;
-    font-size: 3rem; /* Ajusta el tamaño del texto */
-    font-family: "Bebas Neue", sans-serif;
-    font-style: italic;
-    margin-top: 20%;
-    margin-left: 100%; /* Aumenta para darle más espacio respecto a la imagen */
-    transform: rotate(-10deg);
-    z-index: 2;
-    position: relative;
+.logo .mono{
+    margin-top: 20% ;
 }
 
+
+.redirec{
+    justify-content: end;
+    display: flex;
+
+}
 .apply-button {
-    background-color: #ffc843;
-    color: #000;
-    padding: 20px 40px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    
+    color: #ffffff;
+    
+    font-size: 1.3rem;
+    font-weight: 550;
     text-decoration: none;
-    z-index: 2;
-    position: relative; /* Si no deseas que se salga del flujo */
-    margin-right: 2.9rem;
+    margin-right: 4.5rem;
 }
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
-        padding: 10px; /* Ajusta el padding para evitar demasiado espacio en móviles */
-        height: auto; /* Ajusta automáticamente según el contenido */
+        padding: 0; /* Ajusta el padding para evitar demasiado espacio en móviles */
+        height: 4rem; /* Ajusta automáticamente según el contenido */
         position: relative;
         overflow: visible;
     }
 
     .logo {
-        position: relative;
         display: flex;
-        align-items: center;
     }
 
     .logo img {
-        width: 160px !important; /* Aumenta ligeramente el tamaño en pantallas pequeñas */
+        width: 4.5rem; /* Aumenta ligeramente el tamaño en pantallas pequeñas */
         height: auto;
-        background-color: #ffc843;
-        position: absolute;
-        top: -35%; 
-        left: -15%; /* Ajusta la posición para pantallas pequeñas */
-        z-index: 1;
-        padding: 10px;
-    }
 
-    .logo-text {
-        font-size: 1.5rem; /* Mantén el tamaño ajustado del texto */
-        margin-left: 100%; /* Ajusta para no cortar la imagen */
-        transform: rotate(-10deg); /* Mantén la rotación */
-        z-index: 2;
-        position: relative;
-        margin-top: 3%;
+
+        top: 0%; 
+        left: 0%; /* Ajusta la posición para pantallas pequeñas */
+        
+        padding: 5%;
     }
 
     .apply-button {
-        background-color: #ffc843;
-        color: #000;
-        padding: 10px 20px;
-        font-size: 1rem; /* Reduce ligeramente el tamaño de la fuente */
-        font-weight: bold;
+        color: #ffffff;
+        font-size: 0.6rem;
+        font-weight: 550;
         text-decoration: none;
-        z-index: 2;
-        position: relative;
-        margin-right: 0;
+        margin-right: 1rem !important;
     }
+    .logo .mono{
+        margin-top: 6% ;
+    }
+
 }
 .imagenes{
     padding-top: 2rem;
@@ -267,6 +250,71 @@ Seccion para abajo y footer
         background-color: #d827f3;
         font-weight: bold;
         margin-top: 0%;
+    }
+}
+
+/*
+seccion nueva
+*/
+
+section {
+    font-family: 'Oswald';
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    display: flex; /* Opcional: Si deseas centrar el contenido dentro de la sección */
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+section .colab h1{
+    font-size: 14rem ;
+    font-weight: bold;
+    color: #E5E5E5;
+}
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre elementos en cada fila */
+    align-items: center; /* Alinea verticalmente los logos */
+    gap: 20px; /* Espacio entre cada logo */
+    padding: 6%;
+}
+
+.marca {
+    
+    text-align: start; /* Centrar el logo */
+    width: auto; /* Ancho máximo del logo para que no se estire demasiado */
+}
+.separador {
+    flex-basis: 100%; /* Ocupa toda la fila */
+    height: 0; /* No tiene altura visual */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+@media (max-width: 768px){
+    section .colab h1{
+        font-size: 3rem ;
+        font-weight: bold;
+        color: #E5E5E5;
+    }
+    .marcas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Espacio entre elementos en cada fila */
+        align-items: center; /* Alinea verticalmente los logos */
+        gap: 20px; /* Espacio entre cada logo */
+        padding: 6%;
+    }
+    
+    .marca {
+        
+        text-align: start; /* Centrar el logo */
+        width: 4rem; /* Ancho máximo del logo para que no se estire demasiado */
+    }
+    .separador {
+        flex-basis: 100%; /* Ocupa toda la fila */
+        height: 0; /* No tiene altura visual */
+        margin-bottom: 20px; /* Espacio entre filas */
     }
 }
 
