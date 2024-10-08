@@ -12,7 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #000;
-    height: 100px; /* Puedes fijar una altura si es necesario */
+    height: 5rem; /* Puedes fijar una altura si es necesario */
     position: relative;
     overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
 }
@@ -23,7 +23,7 @@ header {
 }
 
 .logo img {
-    width: 10rem; /* Ajusta el tamaño de la imagen según lo necesario */
+    width: 8rem; /* Ajusta el tamaño de la imagen según lo necesario */
     height: auto;
     
     top: 0%; /* Ajusta cuánto sobresale la imagen del contenedor */
@@ -45,7 +45,7 @@ header {
     
     color: #ffffff;
     
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 550;
     text-decoration: none;
     margin-right: 4.5rem;
@@ -267,7 +267,7 @@ section {
 }
 
 section .colab h1{
-    font-size: 14rem ;
+    font-size: 10rem ;
     font-weight: bold;
     color: #E5E5E5;
 }
@@ -332,13 +332,13 @@ footer .grid{
     grid-template-columns: 2fr 1fr;
 }
 footer .text2{
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     width: 100% !important;
     text-align: start;
     font-weight: 900;
 }
 footer .text{
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     width: 100% !important;
     text-align: start;
     font-weight: bold;
@@ -347,7 +347,7 @@ footer .mono{
     width: 40rem !important;
 }
 footer .text1{
-    font-size: 7.5rem !important;
+    font-size: 6rem !important;
     width: 100% !important;
     font-family: 'Oswald';
 }
