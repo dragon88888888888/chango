@@ -120,6 +120,9 @@ Seccion para abajo y footer
     display: flex;
     width: 100%;
     height: 100vh;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    overflow: hidden;
 }
 
 .box {
@@ -127,69 +130,44 @@ Seccion para abajo y footer
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-   
-    
-}
-
-.box1 {
+    min-width: 50%;
     background-color: #000000;
     color: white;
     margin-right: 16px;
-    padding-left: 8%;
-    padding-right: 3%;
-}
-
-.box2 {
-    background-color: #371c3b;
-    color: white;
-    padding-right: 8%;
-    padding-left: 3%;
+    padding-left: 6%;
+    padding-right: 2%;
     
 }
+
+
+
+
 .logo-image {
-    width: 30%; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción original */
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     
-}
-
-.seccion .logo-texts {
-    font-family: "Jomhuria", serif; /* Cambia esto si tienes una fuente específica */
-    font-size: 9rem; /* Ajusta el tamaño del texto */
-    margin-top: -8%;
-    background: linear-gradient(90deg, #3a82f7, #a12ee2, #f15d5d, #f1903d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-   margin-bottom: -8%;
-    letter-spacing: 2px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    display: inline-block;
 }
 
 
 .text {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem !important;
+    margin-bottom: 10%;
+    font-size: 1rem !important;
+    width: 80%;
 }
 
 .button {
-    margin-top: 8%;
-    background-color: #565ff0;
-    color: rgb(0, 0, 0);
-    padding: 20px 170px;
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background-color: #000;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
     text-decoration: none;
-    font-size: 1.5rem !important;
-    font-weight: bold;
-   
 }
 
-.button2 {
-    color: white;
-    background-color: #d827f3;
-}
+
 
 @media (max-width: 768px) {
     .seccion {
@@ -292,6 +270,10 @@ section .colab h1{
 }
 
 @media (max-width: 768px){
+
+    section{
+        height: 70vh;
+    }
     section .colab h1{
         font-size: 3rem ;
         font-weight: bold;
@@ -314,7 +296,7 @@ section .colab h1{
     .separador {
         flex-basis: 100%; /* Ocupa toda la fila */
         height: 0; /* No tiene altura visual */
-        margin-bottom: 20px; /* Espacio entre filas */
+        margin-bottom: -15%; /* Espacio entre filas */
     }
 }
 
