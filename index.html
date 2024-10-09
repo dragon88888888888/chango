@@ -205,13 +205,13 @@
     // Animación de scroll horizontal en la sección de boxes
     let boxes = gsap.utils.toArray(".box");
     let scrollTween = gsap.to(boxes, {
-        xPercent: -100 * (boxes.length - 1),
+        xPercent: -50 * (boxes.length - 1),
         ease: "none",
         scrollTrigger: {
             trigger: ".seccion",
             pin: true,
             scrub: 0.1,
-            end: "+=2000", // Ajusta la longitud del scroll
+            end: "+=1000", // Ajusta la longitud del scroll
         }
     });
 </script>
