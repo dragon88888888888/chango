@@ -7,84 +7,112 @@ body{
 encabezado
 ##########################################################
 */
+/* Estilos generales */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #000;
-    height: 5rem; /* Puedes fijar una altura si es necesario */
+    height: 5rem;
     position: relative;
-    overflow: visible; /* Para que la imagen que sobresale se vea fuera del contenedor */
+    overflow: visible;
 }
 
 .logo {
     display: flex;
-    
 }
 
 .logo img {
-    width: 8rem; /* Ajusta el tamaño de la imagen según lo necesario */
+    width: 8rem;
     height: auto;
-    
-    top: 0%; /* Ajusta cuánto sobresale la imagen del contenedor */
-    left: 0%; /* Ajusta la posición horizontal si lo necesitas */
+    top: 0%;
+    left: 0%;
     padding: 5%;
 }
 
-.logo .mono{
-    margin-top: 20% ;
+.logo .mono {
+    margin-top: 20%;
 }
 
-
-.redirec{
+.redicc {
     justify-content: end;
     display: flex;
-
 }
+
 .apply-button {
-    
     color: #ffffff;
-    
     font-size: 1rem;
     font-weight: 550;
     text-decoration: none;
     margin-right: 4.5rem;
 }
+
+/* Botón hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+/* Menú móvil */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: sticky;
+    width: 100%;
+    top: 4rem;
+    left: 0;
+    padding: 0rem 0;
+    z-index: 2;
+}
+
+.mobile-menu a {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border: 2px solid #ffffff;
+}
+
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
-        padding: 0; /* Ajusta el padding para evitar demasiado espacio en móviles */
-        height: 4rem; /* Ajusta automáticamente según el contenido */
-        position: relative;
-        overflow: visible;
-    }
-
-    .logo {
-        display: flex;
+        padding: 0;
+        height: 4rem;
     }
 
     .logo img {
-        width: 4.5rem; /* Aumenta ligeramente el tamaño en pantallas pequeñas */
+        width: 4.5rem;
         height: auto;
-
-
-        top: 0%; 
-        left: 0%; /* Ajusta la posición para pantallas pequeñas */
-        
         padding: 5%;
     }
 
-    .apply-button {
-        color: #ffffff;
-        font-size: 0.6rem;
-        font-weight: 550;
-        text-decoration: none;
-        margin-right: 1rem !important;
-    }
-    .logo .mono{
-        margin-top: 6% ;
+ .logo .mono{
+        width: 4.5rem;
+        height: auto;
+        padding: 5%;
+        margin-top: 0%;
     }
 
+    .apply-button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Mostrar menú móvil cuando está activo */
+.show-menu {
+    display: flex;
 }
 .imagenes{
     padding-top: 2rem;
@@ -179,7 +207,6 @@ Seccion para abajo y footer
         padding-bottom: 5rem;
         width: 100%;
         height: 80vh;
-        /* Ajuste para pantallas pequeñas */
         padding-left: 2rem;
         padding-right: 2rem;
         display: flex;
@@ -295,12 +322,12 @@ section .colab h1{
 
 /* footer*/
 .full-height {
-    height: 90vh; /* 100% de la altura de la ventana del navegador */
+    height: auto; /* 100% de la altura de la ventana del navegador */
+    
   }
 
 footer{
     background-color: #000000 !important;
-    
 
 }
 footer .grid{

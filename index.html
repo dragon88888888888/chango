@@ -35,23 +35,31 @@
 
   <body>
     <!-- Sección del encabezado -->
-    <header class="head sticky top-0 z-50">
-      <div class="logo">
-        <!-- Logo de la empresa -->
-        <img
-          class="mono"
-          alt="Logo with a stylized monkey face"
-          style="background-color: #ffc843"
-          src="img/Group 39797.svg"
-        />
-        <img alt="Logo with a stylized monkey face" src="img/Layer_1.svg" />
-      </div>
-      <div class="redicc">
-        <a class="apply-button" href="#"> Proyectos </a>
-        <a class="apply-button" href="#"> Aliados </a>
-        <a class="apply-button" href="#"> Contáctanos </a>
-      </div>
-    </header>
+  <header class="head sticky top-0 z-50">
+  <div class="logo">
+    <!-- Logo de la empresa -->
+    <img
+      class="mono"
+      alt="Logo with a stylized monkey face"
+      style="background-color: #ffc843"
+      src="img/Group 39797.svg"
+    />
+    <img alt="Logo with a stylized monkey face" src="img/Layer_1.svg" />
+  </div>
+  <div class="redicc">
+    <a class="apply-button" href="#"> Proyectos </a>
+    <a class="apply-button" href="#"> Aliados </a>
+    <a class="apply-button" href="#"> Contáctanos </a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+</header>
+
+<div id="mobileMenu" class="mobile-menu">
+  <a href="#"> Proyectos </a>
+  <a href="#"> Aliados </a>
+  <a href="#"> Contáctanos </a>
+</div>
+
 
     <!-- Sección de imágenes -->
     <div class="imagenes">
@@ -330,6 +338,9 @@
             <img src="img/instagram.svg" alt="Instagram" class="w-10 h-auto" />
             <img src="img/linkedin.svg" alt="Linkedin" class="w-10 h-auto" />
           </div>
+
+          <p class="text mb-4" style="margin-top: 2%;">Escribenos a: <a>hola@smartape.ai</a></p>
+          
         </div>
 
         <!-- Imagen grande del pie de página -->
@@ -368,6 +379,12 @@
   gsap.matchMedia().add("(max-width: 767px)", () => {
     ScrollTrigger.getAll().forEach(t => t.kill()); // Esto mata cualquier animación GSAP activa en móviles
   });
+
+  function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("show-menu");
+}
+
     </script>
   </body>
 </html>
