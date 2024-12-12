@@ -35,31 +35,30 @@
 
   <body>
     <!-- Sección del encabezado -->
-  <header class="head sticky top-0 z-50">
-  <div class="logo">
-    <!-- Logo de la empresa -->
-    <img
-      class="mono"
-      alt="Logo with a stylized monkey face"
-      style="background-color: #ffc843"
-      src="img/Group 39797.svg"
-    />
-    <img alt="Logo with a stylized monkey face" src="img/Layer_1.svg" />
-  </div>
-  <div class="redicc">
-    <a class="apply-button" href="#"> Proyectos </a>
-    <a class="apply-button" href="#"> Aliados </a>
-    <a class="apply-button" href="#"> Contáctanos </a>
-  </div>
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-</header>
+    <header class="head sticky top-0 z-50">
+      <div class="logo">
+        <!-- Logo de la empresa -->
+        <img
+          class="mono"
+          alt="Logo with a stylized monkey face"
+          style="background-color: #ffc843"
+          src="img/Group 39797.svg"
+        />
+        <img alt="Logo with a stylized monkey face" src="img/Layer_1.svg" />
+      </div>
+      <div class="redicc">
+        <a class="apply-button" href="#proyectos"> Proyectos </a>
+        <a class="apply-button" href="#aliados"> Aliados </a>
+        <a class="apply-button" href="#contactanos"> Contáctanos </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </header>
 
-<div id="mobileMenu" class="mobile-menu">
-  <a href="#"> Proyectos </a>
-  <a href="#"> Aliados </a>
-  <a href="#"> Contáctanos </a>
-</div>
-
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#carruselAcademias"> Proyectos </a>
+      <a href="#aliados"> Aliados </a>
+      <a href="#contactanos"> Contáctanos </a>
+    </div>
 
     <!-- Sección de imágenes -->
     <div class="imagenes">
@@ -202,7 +201,7 @@
     </div>
 
     <!-- Sección con dos boxes de contenido adicional -->
-    <div class="seccion pc mb-4 mt-0">
+    <div id="proyectos" class="seccion pc mb-4 mt-0">
       <div class="box" style="align-items: start">
         <img class="logo-image" src="img/thincrs.svg" />
         <div class="text" style="text-align: start">
@@ -231,69 +230,100 @@
         <a href="#" class="button">Ver más</a>
       </div>
     </div>
-        <!-- Sección con dos boxes de contenido adicional para moviles -->
-       
-<div id="carruselAcademias" class="carousel movil slide" data-bs-ride="carousel">
-  <!-- Indicadores -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carruselAcademias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carruselAcademias" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carruselAcademias" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+    <!-- Sección con dos boxes de contenido adicional para moviles -->
 
-  <!-- Elementos del carrusel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="box">
-        <img class="logo-image" src="img/thincrs.svg" />
-        <div class="text">
-          Al revés de las academias de tecnología tradicionales en las cuales
-          los estudiantes invierten en ellas, nosotros invertimos en ti. Solo
-          nos pagas cuando consigues un trabajo.
-          <p style="margin-bottom: 10%"></p>
-          <a href="#" class="button btn btn-primary">Ver más</a>
+    <div
+      id="carruselAcademias"
+      class="carousel movil slide"
+      data-bs-ride="carousel"
+    >
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carruselAcademias"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carruselAcademias"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carruselAcademias"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Elementos del carrusel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="box">
+            <img class="logo-image" src="img/thincrs.svg" style="width: 40%;"/>
+            <div class="text">
+              Al revés de las academias de tecnología tradicionales en las
+              cuales los estudiantes invierten en ellas, nosotros invertimos en
+              ti. Solo nos pagas cuando consigues un trabajo.
+              <p style="margin-bottom: 10%"></p>
+              <a href="#" class="button btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <img class="logo-image" src="img/maigister.svg" />
+            <div class="text">
+              Al revés de las academias de tecnología tradicionales en las
+              cuales los estudiantes invierten en ellas, nosotros invertimos en
+              ti. Solo nos pagas cuando consigues un trabajo.
+
+              <p style="margin-bottom: 10%"></p>
+
+              <a href="#" class="button btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <img class="logo-image" src="img/vamos.svg" />
+            <div class="text">
+              Al revés de las academias de tecnología tradicionales en las
+              cuales los estudiantes invierten en ellas, nosotros invertimos en
+              ti. Solo nos pagas cuando consigues un trabajo.
+              <p style="margin-bottom: 10%"></p>
+              <a href="#" class="button btn btn-primary">Ver más</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="box">
-        <img class="logo-image" src="img/maigister.svg" />
-        <div class="text">
-          Al revés de las academias de tecnología tradicionales en las cuales
-          los estudiantes invierten en ellas, nosotros invertimos en ti. Solo
-          nos pagas cuando consigues un trabajo.
-          
-          <p style="margin-bottom: 10%"></p>
 
-          <a href="#" class="button btn btn-primary">Ver más</a>
-        </div>
-      </div>
+      <!-- Controles de navegación -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carruselAcademias"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carruselAcademias"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <div class="box">
-        <img class="logo-image" src="img/vamos.svg" />
-        <div class="text">
-          Al revés de las academias de tecnología tradicionales en las cuales
-          los estudiantes invierten en ellas, nosotros invertimos en ti. Solo
-          nos pagas cuando consigues un trabajo.
-          <p style="margin-bottom: 10%"></p>
-          <a href="#" class="button btn btn-primary">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controles de navegación -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carruselAcademias" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carruselAcademias" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</div>
-    <section>
+    <section id="aliados">
       <div class="colab">
         <h1>COLLABORATORS</h1>
       </div>
@@ -311,6 +341,7 @@
     </section>
     <!-- Pie de página -->
     <footer
+      id="contactanos"
       class="w-full full-height bg-gray-800 text-white py-6 flex items-center"
     >
       <div
@@ -339,8 +370,9 @@
             <img src="img/linkedin.svg" alt="Linkedin" class="w-10 h-auto" />
           </div>
 
-          <p class="text mb-4" style="margin-top: 2%;">Escribenos a: <a>hola@smartape.ai</a></p>
-          
+          <p class="text mb-4" style="margin-top: 2%">
+            Escribenos a: <a>hola@smartape.ai</a>
+          </p>
         </div>
 
         <!-- Imagen grande del pie de página -->
@@ -374,17 +406,26 @@
         },
       });
 
+      // Desactiva el scrollTrigger en pantallas menores a 768px
+      gsap.matchMedia().add("(max-width: 767px)", () => {
+        ScrollTrigger.getAll().forEach((t) => t.kill()); // Esto mata cualquier animación GSAP activa en móviles
+      });
 
-  // Desactiva el scrollTrigger en pantallas menores a 768px
-  gsap.matchMedia().add("(max-width: 767px)", () => {
-    ScrollTrigger.getAll().forEach(t => t.kill()); // Esto mata cualquier animación GSAP activa en móviles
-  });
+      function toggleMenu() {
+        var menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show-menu");
+      }
 
-  function toggleMenu() {
-  var menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show-menu");
-}
+      // Seleccionar todos los enlaces dentro del menú móvil
+      var mobileMenuLinks = document.querySelectorAll("#mobileMenu a");
 
+      // Agregar un evento de clic a cada enlace
+      mobileMenuLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          // Llama a toggleMenu para cerrar el menú cuando se selecciona una opción
+          toggleMenu();
+        });
+      });
     </script>
   </body>
 </html>

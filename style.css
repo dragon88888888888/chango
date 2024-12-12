@@ -229,7 +229,7 @@ Seccion para abajo y footer
         height: auto;
         /* Mantiene la proporción original */
         margin-bottom: 10%;
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
 
     .text {
@@ -288,6 +288,16 @@ section .colab h1{
     height: 0; /* No tiene altura visual */
     margin-bottom: 20px; /* Espacio entre filas */
 }
+
+@media (max-width: 1024px) {
+section .colab h1 {
+        font-size: 6rem;
+        font-weight: bold;
+        color: #E5E5E5;
+    }
+
+}
+
 
 @media (max-width: 768px){
 
